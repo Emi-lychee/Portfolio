@@ -191,4 +191,10 @@ footer {
 	.dropdown:hover .categories {
 		display: none;
 	}
+	.content-home {
+		padding: 0px 20px 20px;
+	}
+	.content {
+		padding: 50px 50px;
+	}
 }

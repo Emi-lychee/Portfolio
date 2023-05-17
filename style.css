@@ -1,5 +1,5 @@
 body {
-	background-color: #e0fff5;
+	background-color: #e0fff5; // Super light green
 	font-family: 'Maven Pro', sans-serif;
 	margin: 0;
 	min-height: 100vh;
@@ -33,14 +33,14 @@ li {
 
 li a {
 	display: block;
-	color: #000000;
+	color: #000000; // Black
 	text-align: center;
 	padding: 15px 25px;
 	text-decoration: none;
 }
 
 li a:hover:not(.logo):not(.active) {
-	background-color: #bfffea;
+	background-color: #bfffea; // Light green
 }
 
 #logo {
@@ -48,7 +48,7 @@ li a:hover:not(.logo):not(.active) {
 }
 
 .active {
-	background-color: #d9dcff;
+	background-color: #d9dcff; // Light purple
 }
 
 .dropdown:hover .categories {
@@ -58,7 +58,7 @@ li a:hover:not(.logo):not(.active) {
 .categories {
 	display: none;
 	position: absolute;
-	background-color: #f5f5ff;
+	background-color: #f5f5ff; // Super light purple
 	min-width: 150px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
@@ -72,7 +72,7 @@ li a:hover:not(.logo):not(.active) {
 	padding: 0px 150px 50px;
 	position: relative;
 	text-align: center;
-	color: #FFFFFF;
+	color: #ffffff; // White
 }
 
 #cover {
@@ -87,17 +87,17 @@ li a:hover:not(.logo):not(.active) {
 }
 
 button {
-	border: 3px solid #FFFFFF;
+	border: 3px solid #ffffff; // White
 	background-color: transparent;
 	padding: 7px;
 }
 
 button:hover {
-	background-color: #FFFFFF30;
+	background-color: #ffffff30; // Transparent white
 }
 
 button a {
-	color: #FFFFFF;
+	color: #ffffff; // White
 	text-decoration: none;
 	font-size: 15px;
 }
@@ -130,7 +130,7 @@ button a {
 
 .boxes {
 	padding: 75px 10px;
-	background-color: #bfffea;
+	background-color: #bfffea; // Light green
 	margin: 6px;
 	width: 300px;
 	text-align: center;
@@ -141,12 +141,12 @@ button a {
 }
 
 .boxes a {
-	color: #000000;
+	color: #000000; // Black
 	text-decoration: none;
 }
 
 footer {
-	background-color: #d9dcff;
+	background-color: #d9dcff; // Light purple
 	margin-top: auto;
 	bottom: 0;
 	width: 100%;
@@ -167,8 +167,8 @@ footer {
 }
 
 .fa-linkedin, .fa-github, .fa-instagram, .fa-youtube, .fa-envelope {
-	background-color: #525252;
-	color: #FFFFFF;
+	background-color: #525252; // Dark gray
+	color: #ffffff; // White
 }
 
 .copyright {

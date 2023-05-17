@@ -1,11 +1,13 @@
 body {
-	background-color: #e0fff5; // Super light green
+	background-color: #e0fff5;
 	font-family: 'Maven Pro', sans-serif;
 	margin: 0;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
+
+/*body - background color is super light green*/
 
 .navigation {
 	text-align: center;
@@ -33,23 +35,29 @@ li {
 
 li a {
 	display: block;
-	color: #000000; // Black
+	color: #000000;
 	text-align: center;
 	padding: 15px 25px;
 	text-decoration: none;
 }
 
+/*li a - color is black*/
+
 li a:hover:not(.logo):not(.active) {
-	background-color: #bfffea; // Light green
+	background-color: #bfffea;
 }
+
+/*li a:hover:not(.logo):not(.active) - background color is light green*/
 
 #logo {
 	height: 100px;
 }
 
 .active {
-	background-color: #d9dcff; // Light purple
+	background-color: #d9dcff;
 }
+
+/*.active - background color is light purple*/
 
 .dropdown:hover .categories {
 	display: block;
@@ -58,11 +66,13 @@ li a:hover:not(.logo):not(.active) {
 .categories {
 	display: none;
 	position: absolute;
-	background-color: #f5f5ff; // Super light purple
+	background-color: #f5f5ff;
 	min-width: 150px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
 }
+
+/*.categories - background color is super light purple*/
 
 .categories a {
 	text-align: left;
@@ -72,8 +82,10 @@ li a:hover:not(.logo):not(.active) {
 	padding: 0px 150px 50px;
 	position: relative;
 	text-align: center;
-	color: #ffffff; // White
+	color: #ffffff;
 }
+
+/*.content-home - color is white*/
 
 #cover {
 	width: 100%;
@@ -87,20 +99,26 @@ li a:hover:not(.logo):not(.active) {
 }
 
 button {
-	border: 3px solid #ffffff; // White
+	border: 3px solid #ffffff;
 	background-color: transparent;
 	padding: 7px;
 }
 
+/*button - border is white*/
+
 button:hover {
-	background-color: #ffffff30; // Transparent white
+	background-color: #ffffff30;
 }
 
+/*button:hover - background color is transparent white*/
+
 button a {
-	color: #ffffff; // White
+	color: #ffffff;
 	text-decoration: none;
 	font-size: 15px;
 }
+
+/*button a - color is white*/
 
 .content {
 	padding: 50px 200px;
@@ -130,28 +148,34 @@ button a {
 
 .boxes {
 	padding: 75px 10px;
-	background-color: #bfffea; // Light green
+	background-color: #bfffea;
 	margin: 6px;
 	width: 300px;
 	text-align: center;
 }
+
+/*.boxes - background color is light green*/
 
 .boxes:hover {
 	opacity: 0.7;
 }
 
 .boxes a {
-	color: #000000; // Black
+	color: #000000;
 	text-decoration: none;
 }
 
+/*.boxes - color is black*/
+
 footer {
-	background-color: #d9dcff; // Light purple
+	background-color: #d9dcff;
 	margin-top: auto;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
 }
+
+/*footer - background color is light purple*/
 
 .fa {
 	padding: 10px;
@@ -167,9 +191,12 @@ footer {
 }
 
 .fa-linkedin, .fa-github, .fa-instagram, .fa-youtube, .fa-envelope {
-	background-color: #525252; // Dark gray
-	color: #ffffff; // White
+	background-color: #525252;
+	color: #ffffff;
 }
+
+/*.fa-linkedin, .fa-github, .fa-instagram, .fa-youtube, .fa-envelope - background color is dark gray*/
+/*.fa-linkedin, .fa-github, .fa-instagram, .fa-youtube, .fa-envelope - color is white*/
 
 .copyright {
 	font-size: 15px;

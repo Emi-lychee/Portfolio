@@ -220,6 +220,17 @@ button a {
 	list-style-type: circle;
 }
 
+.weblinks {
+	color: #000000;
+	text-decoration: none;
+}
+
+/*.weblinks - color is black*/
+
+.weblinks:hover {
+	color: purple;
+}
+
 .contentM {
 	max-width: 600px;
 	display: inline-block;

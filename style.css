@@ -139,6 +139,15 @@ button a {
 	display: inline-block;
 }
 
+#me {
+	border-radius: 50%;
+}
+
+.photo {
+	width: 330px;
+	border: 7px solid white;
+}
+
 .contentR {
 	min-width: 350px;
 	max-width: 600px;
@@ -149,15 +158,6 @@ button a {
 h1 {
 	font-weight: 500;
 	font-size: 35px;
-}
-
-#me {
-	border-radius: 50%;
-}
-
-.photo {
-	width: 330px;
-	border: 7px solid white;
 }
 
 .container {
@@ -198,6 +198,7 @@ h1 {
 #carousel {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .carousel-item img {

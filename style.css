@@ -146,6 +146,11 @@ button a {
 	float: right;
 }
 
+h1 {
+	font-weight: 500;
+	font-size: 35px;
+}
+
 #me {
 	border-radius: 50%;
 }
@@ -200,6 +205,11 @@ button a {
 	max-width: 700px;
 }
 
+h2 {
+	font-weight: 475;
+	font-size: 25px;
+}
+
 .eventcontent {
 	padding: 0px 35px 20px;
 }
@@ -209,9 +219,14 @@ button a {
 	display: inline-block;
 }
 
+h3 {
+	font-weight: normal;
+	font-size: 20px;
+}
+
 .rightbullets {
 	min-width: 100px;
-	max-width: 500px;
+	max-width: 400px;
 	display: inline-block;
 	float: right;
 }

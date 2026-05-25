@@ -59,7 +59,7 @@ body {
 
 /*.active - background color is light purple*/
 
-.dropdown:hover .categories {
+.dropdownmenu:hover .categories {
 	display: block;
 }
 

@@ -4,13 +4,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Emily Wu | Event Planning</title>
+	<title>Emily Wu | Event Planing</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" href="images/E.jpg"/>
+	<link rel="shortcut icon" href="images/E.png"/>
 </head>
 
 <body>
@@ -34,6 +34,21 @@
 	<div class="content">
 		<h1>Event Planning</h1>
 		<br>
+		<div id="carousel" aria-label="Carousel Photos">
+			<button class="carousel-control prev" type="button" aria-label="Previous slide">&#10094;</button>
+			<div class="carousel-track">
+				<img class="carousel-slide active" src="images/carousel/photo1.jpeg" alt="Carousel 1">
+				<img class="carousel-slide" src="images/carousel/photo2.jpg" alt="Carousel 2">
+				<img class="carousel-slide" src="images/carousel/photo1.jpeg" alt="Carousel 3">
+			</div>
+			<button class="carousel-control next" type="button" aria-label="Next slide">&#10095;</button>
+			<div class="carousel-indicators" aria-label="Choose slide">
+				<button class="indicator active" type="button" aria-label="Slide 1"></button>
+				<button class="indicator" type="button" aria-label="Slide 2"></button>
+				<button class="indicator" type="button" aria-label="Slide 3"></button>
+			</div>
+		</div>
+		<br><br>
 		<h2>SPS Hospitality, Tourism, & Events Society (HTES)</h2>
 		<div class="eventcontent">
 			<div class="leftbullets">
@@ -78,20 +93,6 @@
 					<li>Spring Cruise</li>
 				</ul>
 			</div>
-			<br>
-			<h2>Event Planning Internship</h2>
-			<div class="eventcontent">
-				<ul class="bullets">
-					<li>NYC Multicultural Festival</li>
-					<li>Black History Month Celebration</li>
-					<li>30th Precinct Community Council Seniors' Dinner</li>
-					<li>Future Leaders Program</li>
-					<li>Giveback Tuesdays</li>
-					<li>NYACE Choir</li>
-				</ul>
-			</div>
-		</div>
-		<div class="contentR">
 			<h2>Student Government Organization (SGO)</h2>
 			<div class="eventcontent">
 				<ul class="bullets">
@@ -108,6 +109,19 @@
 				</ul>
 			</div>
 		</div>
+		<div class="contentR">
+			<h2>Event Planning Internship</h2>
+			<div class="eventcontent">
+				<ul class="bullets">
+					<li>NYC Multicultural Festival</li>
+					<li>Black History Month Celebration</li>
+					<li>30th Precinct Community Council Seniors' Dinner</li>
+					<li>Future Leaders Program</li>
+					<li>Giveback Tuesdays</li>
+					<li>NYACE Choir</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<footer>
 		<!-- <a class="fa fa-linkedin" href="https://www.linkedin.com/in/emilywu825/" target="_blank"></a> -->
@@ -117,6 +131,22 @@
 		<!-- <a class="fa fa-envelope" href="" target="_blank"></a> -->
 		<p class="copyright">© 2026 Emily Wu</p>
 	</footer>
+	<script>
+		const slides = document.querySelectorAll(".carousel-slide");
+		const indicators = document.querySelectorAll(".indicator");
+		let currentSlide = 0;
+		function showSlide(index) {
+			currentSlide = (index + slides.length) % slides.length;
+			slides.forEach((slide, i) => slide.classList.toggle("active", i === currentSlide));
+			indicators.forEach((indicator, i) => indicator.classList.toggle("active", i === currentSlide));
+		}
+		document.querySelector(".prev").addEventListener("click", () => showSlide(currentSlide - 1));
+		document.querySelector(".next").addEventListener("click", () => showSlide(currentSlide + 1));
+		indicators.forEach((indicator, i) => indicator.addEventListener("click", () => showSlide(i)));
+		setInterval(() => {
+			showSlide(currentSlide + 1);
+		}, 3000); // Automatically change photos every 3 seconds
+	</script>
 </body>
 
 </html>
